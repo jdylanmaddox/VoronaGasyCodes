@@ -10,7 +10,7 @@ Geneious users can download the lastest VoronaGasyCodes.geneious file and ADD IN
 
 
 ## Future Plans
-Our future plans include expanding the database with endemic species not included in the initial version and to add samples from multiple geographic locations for species already represented in the database. While our goal is to establish a comprehensive database backed by vourchered museum specimens, we recognize the utility of sequence data from other sources (eDNA, iDNA, etc.). Consequently, we invite researchers working in Madagascar to submit their own data for inclusion to the database. For submission inquiries, please contact Dylan Maddox or Sushma Reddy.
+Our future plans include expanding the database with endemic species not included in the initial version and to add samples from multiple geographic locations for species already represented. While our goal is to establish a comprehensive database backed by vourchered museum specimens, we recognize the utility of sequence data from other sources (eDNA, iDNA, etc.). Consequently, we invite researchers working in Madagascar to submit their own data for inclusion to the database. For submission inquiries, please contact Dylan Maddox or Sushma Reddy.
 
 ## Citation
 If you use VoronaGasyCodes in your research, please cite our paper: ADD_REFERENCE.
