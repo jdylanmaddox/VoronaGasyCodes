@@ -4,7 +4,7 @@ VoronaGasyCodes is a publicly accessible, actively curated database of mitochond
 ## Usage
 Users with BLAST experience should simply download the latest VoronaGasyCodes.fasta file and incorporate it into their workflows. Information about each specimen can be found in  METADATA.csv.
 
-For those with limited or no BLAST experience, here are two approaches to use VoronaGasyCodes, one via the command line interface (CLI) and the other through a graphical user interface (GUI).
+For those with limited or no BLAST experience, here are two simple approaches to use VoronaGasyCodes, one via the command line interface (CLI) and the other through a graphical user interface (GUI).
 
 
 ### 1) BLAST+ in a conda environment 
