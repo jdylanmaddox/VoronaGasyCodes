@@ -40,10 +40,10 @@ Provides a GUI option, Geneious can perform local blast searches. users can down
 
 
 ## Future Plans
-Our future plans include expanding the database with endemic species not included in the initial version and to add samples from multiple geographic locations for species already represented. While our goal is to establish a comprehensive database backed by vourchered museum specimens, we recognize the utility of sequence data from other sources (eDNA, iDNA, etc.). Consequently, we invite researchers working in Madagascar to submit their own data for inclusion to the database. For submission inquiries, please contact Dylan Maddox or Sushma Reddy.
+We plan to expand the database with endemic species not included in the initial version and to add samples from multiple geographic locations for species already represented. While our goal is to establish a comprehensive database backed by vourchered museum specimens, we recognize the utility of sequence data from other sources (eDNA, iDNA, etc.). Consequently, we invite researchers working in Madagascar to submit their own data for inclusion to the database. For submission inquiries, please contact Dylan Maddox or Sushma Reddy.
 
 ## Citation
 If you use VoronaGasyCodes in your research, please cite our paper: ADD_REFERENCE.
 
 ## Contact Information
-Please use our GitHub issue tracker to provide feedback, ask questions, or report errors.
+Please use our [GitHub issue tracker](https://github.com/jdylanmaddox/VoronaGasyCodes/issues) to provide feedback, ask questions, or report errors.
