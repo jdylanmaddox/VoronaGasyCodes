@@ -4,9 +4,27 @@ VoronaGasyCodes is a publicly accessible, actively curated database of mitochond
 ## Usage
 Users with BLAST experience should simply download the latest VoronaGasyCodes.fasta file and create a local BLAST database with their desired settings. The METADATA.csv file provides information on each specimen.
 
-Create local BLAST database by ADD INSTRUCTIONS
+```
+# create conda environment
+conda create -n mada_blast
+conda activate mada_blast
 
-Geneious users can download the lastest VoronaGasyCodes.geneious file and ADD INSTRUCTIONS
+# install blast+
+conda install bioconda::blast
+
+# create directory and download VoronGasyCodes
+mkdir VoronGasyCodes
+cd VoronGasyCodes
+wget https://github.com/jdylanmaddox/VoronaGasyCodes/blob/master/VoronGasyCodes.fasta
+
+# create blast+ database
+makeblastdb -in VoronaGasyCodes.fasta -dbtype nucl -out VoronaGasyCodes
+
+# blast VoronaGasyCodes database
+blastn -query RNP_NGS_aves_seq.fasta -db VoronaGasyCodes -outfmt 6 -num_threads 4 -out example_BLAST_results.txt -max_target_seqs 5 
+```
+
+If you'd prefer a GUI option, Geneious can perform local blast. users can download the lastest VoronaGasyCodes.geneious file and ADD INSTRUCTIONS
 
 
 ## Future Plans
