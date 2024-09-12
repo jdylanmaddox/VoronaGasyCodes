@@ -2,25 +2,34 @@
 VoronaGasyCodes is a publicly accessible, actively curated database of mitochondrial barcodes for Malagasy birds. It was created to facilitate species identification for researchers in Madagascar using metabarcoding or traditional sampling methods. This initial database, introduced in our ADD_JOURNAL paper, includes sequence data from ??? vouchered museum specimens for six mitochondrial genes: 12S, 16S, COI, Cytb, ND2, and ND3. 
 
 ## Usage
-Users with BLAST experience should simply download the latest VoronaGasyCodes.fasta file and create a local BLAST database with their desired settings. The METADATA.csv file provides information on each specimen.
+Users with BLAST experience should simply download the latest VoronaGasyCodes.fasta file and incorporate it into their workflows. Information about each specimen can be found in  METADATA.csv.
 
+Here are two ways users without BLAST experience can utilize VoronaGasyCodes.
+
+BLAST+ commandline within a conda environment. Note, it's not necessary to use conda but it's usually eaiser. See the [Conda Documentation]([url](https://conda.io/projects/conda/en/latest/index.html) for help installing and using conda.  
+
+create conda environment
 ```
-# create conda environment
 conda create -n mada_blast
 conda activate mada_blast
-
-# install blast+
+```
+install blast+
+```
 conda install bioconda::blast
-
-# create directory and download VoronGasyCodes
+```
+create directory and download VoronGasyCodes
+```
 mkdir VoronGasyCodes
 cd VoronGasyCodes
 wget https://github.com/jdylanmaddox/VoronaGasyCodes/blob/master/VoronGasyCodes.fasta
-
-# create blast+ database
+```
+create blast+ database
+```
 makeblastdb -in VoronaGasyCodes.fasta -dbtype nucl -out VoronaGasyCodes
+```
 
-# blast VoronaGasyCodes database
+blast VoronaGasyCodes database
+```
 blastn -query RNP_NGS_aves_seq.fasta -db VoronaGasyCodes -outfmt 6 -num_threads 4 -out example_BLAST_results.txt -max_target_seqs 5 
 ```
 
