@@ -19,7 +19,7 @@ conda activate vgc_blast
 ```
 conda install bioconda::blast
 ```
-- create directory and download VoronaGasyCodes
+- create new directory and download VoronaGasyCodes
 ```
 mkdir VoronGasyCodes
 cd VoronGasyCodes
