@@ -4,36 +4,39 @@ VoronaGasyCodes is a publicly accessible, actively curated database of mitochond
 ## Usage
 Users with BLAST experience should simply download the latest VoronaGasyCodes.fasta file and incorporate it into their workflows. Information about each specimen can be found in  METADATA.csv.
 
-Here are two ways users without BLAST experience can utilize VoronaGasyCodes.
+For those with limited or no experience, here are two ways to utilize VoronaGasyCodes.
 
-BLAST+ commandline within a conda environment. Note, it's not necessary to use conda but it's usually eaiser. See the [Conda Documentation]([url](https://conda.io/projects/conda/en/latest/index.html) for help installing and using conda.  
+### 1) BLAST+ in a conda environment 
+Note, conda is not required but it's usually eaiser. See the [Conda Documentation](https://conda.io/projects/conda/en/latest/index.html) for help installing and using conda. 
 
-create conda environment
+The steps are simple and straightforward:
+
+- create a conda environment
 ```
-conda create -n mada_blast
-conda activate mada_blast
+conda create -n vgc_blast
+conda activate vgc_blast
 ```
-install blast+
+- install BLAST+
 ```
 conda install bioconda::blast
 ```
-create directory and download VoronGasyCodes
+- download VoronaGasyCodes
 ```
 mkdir VoronGasyCodes
 cd VoronGasyCodes
 wget https://github.com/jdylanmaddox/VoronaGasyCodes/blob/master/VoronGasyCodes.fasta
 ```
-create blast+ database
+- create local BLAST+ database
 ```
 makeblastdb -in VoronaGasyCodes.fasta -dbtype nucl -out VoronaGasyCodes
 ```
-
-blast VoronaGasyCodes database
+- perform BLAST+ search using VoronaGasyCodes  
 ```
 blastn -query RNP_NGS_aves_seq.fasta -db VoronaGasyCodes -outfmt 6 -num_threads 4 -out example_BLAST_results.txt -max_target_seqs 5 
 ```
 
-If you'd prefer a GUI option, Geneious can perform local blast. users can download the lastest VoronaGasyCodes.geneious file and ADD INSTRUCTIONS
+### 2) Geneious
+Provides a GUI option, Geneious can perform local blast searches. users can download the lastest VoronaGasyCodes.geneious file and ADD INSTRUCTIONS
 
 
 ## Future Plans
