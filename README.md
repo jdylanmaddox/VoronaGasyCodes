@@ -10,33 +10,36 @@ For those with limited or no BLAST experience, here are two simple approaches to
 ### 1) BLAST+ in a conda environment 
 Note, conda is not required but it's usually an eaiser experience. See the [Conda Documentation](https://conda.io/projects/conda/en/latest/index.html) for help installing and using conda. 
 
-- create a conda environment
+1) Create a conda environment
 ```
 conda create -n vgc_blast
 conda activate vgc_blast
 ```
-- install BLAST+
+2) Install BLAST+
 ```
 conda install bioconda::blast
 ```
-- create new directory and download VoronaGasyCodes
+3) Create new directory
 ```
 mkdir VoronGasyCodes
 cd VoronGasyCodes
+```
+4) Download VoronaGasyCodes
+```
 wget https://github.com/jdylanmaddox/VoronaGasyCodes/blob/master/VoronGasyCodes.fasta
 ```
-- create local BLAST+ database
+5) Create local BLAST+ database
 ```
 makeblastdb -in VoronaGasyCodes.fasta -dbtype nucl -out VoronaGasyCodes
 ```
-- perform BLAST+ search using VoronaGasyCodes  
+6) Perform BLAST+ search using VoronaGasyCodes  
 ```
 blastn -query RNP_NGS_aves_seq.fasta -db VoronaGasyCodes -outfmt 6 -num_threads 4 -max_target_seqs 5 -out example_BLAST_results.txt
 ```
-Here we've selected the tabular format, four cores, and limited the results to the best five hits. See the [BLAST+ documentation](https://www.ncbi.nlm.nih.gov/books/NBK279690/) for more options.
+Here we've selected tabular format, four cores, and limited the results to the best five hits, but there are many more options availabe ([BLAST+ documentation](https://www.ncbi.nlm.nih.gov/books/NBK279690/)).
 
 ### 2) Geneious
-The paid version of Geneious can perform local or custom blast searches. Simply download the VoronaGasyCodes.fasta file, import it to Geneious, and follow these
+The paid version of [Geneious](https://www.geneious.com) can perform local or custom blast searches. Simply download the VoronaGasyCodes.fasta file, import it to Geneious, and follow these
 [instructions](https://help.geneious.com/hc/en-us/articles/360044627372-How-can-I-BLAST-against-my-own-sequences-or-a-database-that-isn-t-part-of-NCBI). For the "Add BLAST Database" step, simply select the VoronaGasyCodes file you importaned.
 
 ## Future Plans
