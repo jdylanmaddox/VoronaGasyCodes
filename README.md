@@ -8,7 +8,7 @@ For those with limited or no BLAST experience, here are two simple approaches to
 
 
 ### 1) BLAST+ in a conda environment 
-Note, conda is not required but it's usually an smoother experience. See the [Conda Documentation](https://conda.io/projects/conda/en/latest/index.html) for help installing and using conda. 
+Note, conda is not required but it's usually a smoother experience. See the [Conda Documentation](https://conda.io/projects/conda/en/latest/index.html) for help installing and using conda. 
 
 1) Create a conda environment
 ```
