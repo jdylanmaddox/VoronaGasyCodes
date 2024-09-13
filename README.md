@@ -31,7 +31,6 @@ makeblastdb -in VoronaGasyCodes.fasta -dbtype nucl -out VoronaGasyCodes
 ```
 - perform BLAST+ search using VoronaGasyCodes  
 ```
-cd ..
 blastn -query RNP_NGS_aves_seq.fasta -db VoronaGasyCodes -outfmt 6 -num_threads 4 -out example_BLAST_results.txt -max_target_seqs 5 
 ```
 
