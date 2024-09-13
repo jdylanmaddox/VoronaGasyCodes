@@ -8,7 +8,7 @@ For those with limited or no BLAST experience, here are two simple approaches to
 
 
 ### 1) BLAST+ in a conda environment 
-Note, conda is not required but it's usually eaiser. See the [Conda Documentation](https://conda.io/projects/conda/en/latest/index.html) for help installing and using conda. 
+Note, conda is not required but it's usually an eaiser experience. See the [Conda Documentation](https://conda.io/projects/conda/en/latest/index.html) for help installing and using conda. 
 
 - create a conda environment
 ```
@@ -31,6 +31,7 @@ makeblastdb -in VoronaGasyCodes.fasta -dbtype nucl -out VoronaGasyCodes
 ```
 - perform BLAST+ search using VoronaGasyCodes  
 ```
+cd ..
 blastn -query RNP_NGS_aves_seq.fasta -db VoronaGasyCodes -outfmt 6 -num_threads 4 -out example_BLAST_results.txt -max_target_seqs 5 
 ```
 
@@ -39,7 +40,7 @@ The paid version of Geneious can perform local or custom blast searches. Simply 
 [instructions](https://help.geneious.com/hc/en-us/articles/360044627372-How-can-I-BLAST-against-my-own-sequences-or-a-database-that-isn-t-part-of-NCBI). For the "Add BLAST Database" step, simply select the VoronaGasyCodes file you importaned.
 
 ## Future Plans
-We plan to expand the database with endemic species not included in our initial version as well as samples from multiple geographic locations for species already represented. While our goal is to establish a comprehensive database backed by vourchered museum specimens, we recognize the utility of sequence data from other sources (eDNA, iDNA, etc.). Consequently, we invite researchers working in Madagascar to submit their own data for inclusion to the database. For submission inquiries, please contact Dylan Maddox or Sushma Reddy.
+We plan to expand the database by adding endemic species not included in our initial version, as well as samples from multiple geographic locations for species already represented. In addition, we invite researchers working in Madagascar to submit their own data for inclusion to the database. While our goal is to establish a comprehensive database backed by vourchered museum specimens, we recognize the utility of sequence data from other sources (eDNA, iDNA, etc.). Please contact Dylan Maddox or Sushma Reddy for submission inquiries. 
 
 ## Citation
 If you use VoronaGasyCodes in your research, please cite our paper: ADD_REFERENCE.
