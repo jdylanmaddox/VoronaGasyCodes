@@ -40,7 +40,7 @@ Here we've selected tabular format, four cores, and limited the results to the b
 
 ### 2) Geneious
 The paid version of [Geneious](https://www.geneious.com) can perform local or custom blast searches. Simply download the VoronaGasyCodes.fasta file, import it to Geneious, and follow these
-[instructions](https://help.geneious.com/hc/en-us/articles/360044627372-How-can-I-BLAST-against-my-own-sequences-or-a-database-that-isn-t-part-of-NCBI). For the "Add BLAST Database" step, simply select the VoronaGasyCodes file you importaned.
+[instructions](https://help.geneious.com/hc/en-us/articles/360044627372-How-can-I-BLAST-against-my-own-sequences-or-a-database-that-isn-t-part-of-NCBI). For the "Add BLAST Database" step, simply select the VoronaGasyCodes file you imported.
 
 ## Future Plans
 We plan to expand the database by adding endemic species not included in our initial version, as well as samples from multiple geographic locations for species already represented. In addition, we invite researchers working in Madagascar to submit their own data for inclusion to the database. While our goal is to establish a comprehensive database backed by vourchered museum specimens, we recognize the utility of sequence data from other sources (eDNA, iDNA, etc.). Please contact Dylan Maddox or Sushma Reddy for submission inquiries. 
