@@ -31,8 +31,9 @@ makeblastdb -in VoronaGasyCodes.fasta -dbtype nucl -out VoronaGasyCodes
 ```
 - perform BLAST+ search using VoronaGasyCodes  
 ```
-blastn -query RNP_NGS_aves_seq.fasta -db VoronaGasyCodes -outfmt 6 -num_threads 4 -out example_BLAST_results.txt -max_target_seqs 5 
+blastn -query RNP_NGS_aves_seq.fasta -db VoronaGasyCodes -outfmt 6 -num_threads 4 -max_target_seqs 5 -out example_BLAST_results.txt
 ```
+Here we've selected the tabular format, four cores, and limited the results to the best five hits. See the [BLAST+ documentation](https://www.ncbi.nlm.nih.gov/books/NBK279690/) for more options.
 
 ### 2) Geneious
 The paid version of Geneious can perform local or custom blast searches. Simply download the VoronaGasyCodes.fasta file, import it to Geneious, and follow these
