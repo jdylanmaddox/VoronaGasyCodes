@@ -1,5 +1,5 @@
 # VoronaGasyCodes
-VoronaGasyCodes is a publicly accessible, actively curated database of mitochondrial barcodes for Malagasy birds. It was created to facilitate species identification for researchers in Madagascar using metabarcoding or traditional sampling methods. This initial database, introduced in our ADD_JOURNAL paper, includes sequence data from ??? vouchered museum specimens for six mitochondrial genes: 12S, 16S, COI, Cytb, ND2, and ND3. 
+VoronaGasyCodes is a publicly accessible, actively curated database of mitochondrial barcodes for Malagasy birds. It was created to facilitate species identification for researchers in Madagascar using metabarcoding or traditional sampling methods. This initial database, introduced in our ADD_JOURNAL paper, includes sequence data from 107 vouchered museum specimens for six mitochondrial genes: 12S, 16S, COI, Cytb, ND2, and ND3. 
 
 ## Usage
 Users with BLAST experience should simply download the latest VoronaGasyCodes.fasta file and incorporate it into their workflows. Information about each specimen can be found in  METADATA.csv.
@@ -46,7 +46,7 @@ The paid version of [Geneious](https://www.geneious.com) can perform local or cu
 We plan to expand the database by adding endemic species not included in our initial version, as well as samples from multiple geographic locations for species already represented. In addition, we invite researchers working in Madagascar to submit their own data for inclusion to the database. While our goal is to establish a comprehensive database backed by vourchered museum specimens, we recognize the utility of sequence data from other sources (eDNA, iDNA, etc.). Please contact Dylan Maddox or Sushma Reddy for submission inquiries. 
 
 ## Citation
-If you use VoronaGasyCodes in your research, please cite our paper: ADD_REFERENCE.
+If you use VoronaGasyCodes in your research, please cite our paper: Maddox, J.D. et al. (YEAR).
 
 ## Contact Information
 Please use our [GitHub issue tracker](https://github.com/jdylanmaddox/VoronaGasyCodes/issues) to provide feedback, ask questions, or report errors.
