@@ -1,5 +1,5 @@
 # VoronaGasyCodes
-VoronaGasyCodes is a publicly accessible, actively curated database of mitochondrial barcodes for Malagasy birds. It was created to facilitate species identification for researchers in Madagascar using metabarcoding or traditional sampling methods. This initial database, introduced in our ADD_JOURNAL paper, includes sequence data from 107 vouchered museum specimens for six mitochondrial genes: 12S, 16S, COI, Cytb, ND2, and ND3. 
+VoronaGasyCodes is a publicly accessible, actively curated database of mitochondrial barcodes for Malagasy birds. It was created to facilitate species identification for researchers in Madagascar using metabarcoding or traditional sampling methods. This initial database, introduced in our ADD_JOURNAL paper, includes sequence data from 108 vouchered museum specimens for six mitochondrial genes: 12S, 16S, COI, Cytb, ND2, and ND3. 
 
 ## Usage
 Users with BLAST experience should simply download the latest VoronaGasyCodes.fasta file and incorporate it into their workflows. Information about each specimen can be found in  METADATA.csv.
